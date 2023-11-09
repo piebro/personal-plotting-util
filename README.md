@@ -97,3 +97,20 @@ vpype read input.svg \
 ### Turtletoy Hexagon Truchet
 
 Go [here](https://turtletoy.net/turtle/e5df5b10e0). This is great with a thicker pen and maybe change the scale.
+
+### Turtletoy
+
+https://turtletoy.net/turtle/ce083b5113#style=2,seed=69.8,leaf_detail=6,tree_count=1,line_thickness=2
+```bash
+vpype read llemarie-forest-of-trees-ce083b5113.svg scaleto 101mm 140mm linemerge -t 0.05mm linesort write --page-size 111mmx150mm --center plot.svg
+```
+
+https://turtletoy.net/turtle/a521066015#trajectory=16,plottable=1
+```bash
+vpype read llemarie-strange-attractors-iii-a521066015.svg scaleto 101mm 140mm linemerge -t 2mm linesimplify -t 0.2mm linesort write --page-size 111mmx150mm --center plot.svg
+```
+
+https://turtletoy.net/turtle/d30c1379c9#shape=1,recursion=2,rotMode=0,rotDist=2,rotFalloff=0.85
+```bash
+vpype read reinder-amsterdam-d30c1379c9.svg scaleto 101mm 140mm linemerge -t 2mm linesimplify -t 0.2mm linesort write --page-size 111mmx150mm --center plot.svg
+```
