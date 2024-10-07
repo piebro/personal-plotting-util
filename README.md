@@ -77,6 +77,13 @@ axicli -m align
 
 [Shan, Shui](https://github.com/LingDong-/shan-shui-inf)
 
+
+https://github.com/beardicus/awesome-plotters
+
+https://github.com/LingDong-/linedraw
+
+https://plotter.vision/
+
 ### fishdraw
 
 Go [here](https://fishdraw.glitch.me/) and copy the svg from the side with the developer console and save it in a file.
