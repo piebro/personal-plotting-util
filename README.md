@@ -1,5 +1,19 @@
 # personal-plotting-util
 
+## axicli
+
+### installation
+
+
+
+```bash
+uv venv
+uv pip install https://cdn.evilmadscientist.com/dl/ad/public/AxiDraw_API.zip
+uv pip install vpype
+```
+
+https://axidraw.com/doc/cli_api/
+
 ## SVG Util
 
 [vpype](<https://github.com/abey79/vpype>) is a helpful tool.
@@ -7,10 +21,20 @@
 Example bash command:
 
 ```bash
-vpype --help
-vpype write --help
+uv run vpype --help
+uv run vpype write --help
 
-vpype read input.svg \
+uv run vpype read oma2.svg \
+  linemerge --tolerance 1mm \
+  linesort \
+  scaleto 13cm 3cm \
+  write \
+  --page-size 13x3cm \
+  --center \
+  plot.svg
+
+
+uv run vpype read input.svg \
   linemerge --tolerance 1mm \
   linesort \
   scaleto 25cm 25cm \
@@ -29,7 +53,7 @@ vpype read input.svg \
 # my Postcard format
 # --page-size 15.3x10.8cm \
 
-vpype read input.svg splitdist 50cm write output.svg
+uv run vpype read input.svg splitdist 50cm write output.svg
 
 ```
 
@@ -39,20 +63,20 @@ vpype read input.svg splitdist 50cm write output.svg
 # if the plotter cant connect: sudo chmod 666 /dev/ttyACM1
 
 # create preview
-axicli plot.svg --model 2 -vg3 --speed_pendown 15 --report_time -o preview.svg
+uv run axicli plot.svg --model 2 -vg3 --speed_pendown 15 --report_time -o preview.svg
 
 # show preview
 eog preview.svg
 
 # turn pen up/down
-axicli -m toggle
+sleep 5 && uv run axicli -m toggle
 
 # plot
-axicli plot.svg --model 2 --speed_pendown 15 && axicli -m align
+sleep 5 && uv run axicli plot.svg --model 2 --speed_pendown 15 && uv run axicli -m align
 # speed_pendown default 25
 
 # turn motors off
-axicli -m align
+uv run axicli -m align
 ```
 
 ## Projects
@@ -91,7 +115,7 @@ Go [here](https://fishdraw.glitch.me/) and copy the svg from the side with the d
 ```bash
 # crop the rect around the fish away
 
-vpype read input.svg \
+uv run vpype read input.svg \
   linemerge --tolerance 0.2mm \
   linesort \
   crop 11 11 498 298 \
@@ -109,15 +133,15 @@ Go [here](https://turtletoy.net/turtle/e5df5b10e0). This is great with a thicker
 
 https://turtletoy.net/turtle/ce083b5113#style=2,seed=69.8,leaf_detail=6,tree_count=1,line_thickness=2
 ```bash
-vpype read llemarie-forest-of-trees-ce083b5113.svg scaleto 101mm 140mm linemerge -t 0.05mm linesort write --page-size 111mmx150mm --center plot.svg
+uv run vpype read llemarie-forest-of-trees-ce083b5113.svg scaleto 101mm 140mm linemerge -t 0.05mm linesort write --page-size 111mmx150mm --center plot.svg
 ```
 
-https://turtletoy.net/turtle/a521066015#trajectory=16,plottable=1
+uv run https://turtletoy.net/turtle/a521066015#trajectory=16,plottable=1
 ```bash
 vpype read llemarie-strange-attractors-iii-a521066015.svg scaleto 101mm 140mm linemerge -t 2mm linesimplify -t 0.2mm linesort write --page-size 111mmx150mm --center plot.svg
 ```
 
-https://turtletoy.net/turtle/d30c1379c9#shape=1,recursion=2,rotMode=0,rotDist=2,rotFalloff=0.85
+uv run https://turtletoy.net/turtle/d30c1379c9#shape=1,recursion=2,rotMode=0,rotDist=2,rotFalloff=0.85
 ```bash
 vpype read reinder-amsterdam-d30c1379c9.svg scaleto 101mm 140mm linemerge -t 2mm linesimplify -t 0.2mm linesort write --page-size 111mmx150mm --center plot.svg
 ```
