@@ -64,6 +64,7 @@ uv run axicli -m align
 
 ## Generating SVGs
 
+- [Image to Lineart](image_to_lineart.md) - Convert AI-generated lineart images to SVGs for plotting.
 - [Creating Maps](https://github.com/piebro/plotting-maps) - A tool to easily create OpenStreetMap SVG maps to plot them with a pen plotter. 
 - [TurtleToy](https://turtletoy.net/) - Create generative art using a minimalistic JavaScript Turtle graphics API.
 - [Architecture](https://github.com/piebro/plotting-architecture) - Generative art resembling Architecture blueprints.
