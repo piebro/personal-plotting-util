@@ -60,16 +60,16 @@ uv run axicli -m align
 ## General Links
 
 - [awesome-plotters](https://github.com/beardicus/awesome-plotters) - List of Plotter resources
-- [Pens](https://www.pilotpen.de/themenwelten/alles-fuers-buero/3917/mine-g2-7-0.7-m?c=28)
+- [Pens](https://www.pilotpen.de/themenwelten/alles-fuers-buero/3917/mine-g2-7-0.7-m?c=28) - Pens I use for plotting.
 
 ## Generating SVGs
 
-- [TurtleToy](https://turtletoy.net/)
-- [Architecture](https://github.com/piebro/plotting-architecture)
-- [Creating Maps](https://github.com/piebro/plotting-map)
-- [Protein Ribbons](https://github.com/piebro/plotting-ribbons)
-- [Algorithmic Tree](https://zv.github.io/static/algorithmic-tree.html)
-- [Shan, Shui](https://github.com/LingDong-/shan-shui-inf)
+- [Creating Maps](https://github.com/piebro/plotting-maps) - A tool to easily create OpenStreetMap SVG maps to plot them with a pen plotter. 
+- [TurtleToy](https://turtletoy.net/) - Create generative art using a minimalistic JavaScript Turtle graphics API.
+- [Architecture](https://github.com/piebro/plotting-architecture) - Generative art resembling Architecture blueprints.
+- [Protein Ribbons](https://github.com/piebro/plotting-ribbons) - A tool to render protein ribbon diagrams as SVGs.
+- [Algorithmic Tree](https://zv.github.io/static/algorithmic-tree.html) - Generate trees for plotting.
+- [Shan, Shui](https://github.com/LingDong-/shan-shui-inf) - Procedurally-generated infinitely-scrolling Chinese landscape.
 - [Linedraw](https://github.com/LingDong-/linedraw) - Convert images to vectorized line drawings for plotters. 
 - [plotter.vision](https://plotter.vision/) - Convert 3D STL file to SVG.
 
