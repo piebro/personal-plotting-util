@@ -45,6 +45,7 @@ def get_output_path(base_name):
     while True:
         path = Path(f"{base}_{counter:02d}.png")
         if not path.exists():
+            path.parent.mkdir(parents=True, exist_ok=True)
             return path
         counter += 1
 

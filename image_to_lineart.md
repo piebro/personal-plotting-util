@@ -11,8 +11,8 @@ To create images locally I use fal.ai with a small script that can be run like t
 
 ```bash
 export FAL_KEY=""
-uv run python text_to_image.py  "your prompt here" --aspect-ratio 16:9 --resolution 1k -o images/test
-uv run python text_to_image.py  "your prompt here" --aspect-ratio 16:9 --resolution 1k --image path/to/image.png -o images/test
+uv run https://raw.githubusercontent.com/piebro/personal-plotting-util/refs/heads/main/text_to_image.py "your prompt here" --aspect-ratio 16:9 --resolution 1k -o images/test
+uv run https://raw.githubusercontent.com/piebro/personal-plotting-util/refs/heads/main/text_to_image.py "your prompt here" --aspect-ratio 16:9 --resolution 1k --image path/to/image.png -o images/test
 ```
 
 Some example prompt elements are:
