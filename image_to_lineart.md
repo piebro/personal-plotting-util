@@ -20,7 +20,7 @@ Some example prompt elements are:
 - black and white lineart
 - thin consistent linework
 - thin stroke
-- uniform line weight
+- uniform thin line weight
 - pen plotter style
 - 100% white background
 - Single continuous line drawing of handwritten ...
@@ -36,4 +36,21 @@ sudo apt install imagemagick potrace
 
 # Convert to PBM and trace to SVG with a variable threshold
 INPUT="input.png" && convert "$INPUT" -threshold 50% "${INPUT}.pbm" && potrace "${INPUT}.pbm" -s -o "${INPUT}.svg"
+```
+
+## Example Image Prompts
+
+### Handwritten Text
+
+![](examples/handwriting_00.png)
+
+```bash
+uv run https://raw.githubusercontent.com/piebro/personal-plotting-util/refs/heads/main/text_to_image.py "Single continuous line drawing of handwritten 'Happy Holidays', new line and then 'my little plotting friends' ending with a drawn Pen. This should be drawn with a uniform thin line weight." --aspect-ratio 16:9 --resolution 1k -o images/test
+```
+
+### Botanical Drawing
+
+![](examples/botanical_drawing_00.png)
+```bash
+uv run https://raw.githubusercontent.com/piebro/personal-plotting-util/refs/heads/main/text_to_image.py "Black and white minimal lineart drawing of a botanical illustration of a monstera plant. This should be drawn with a uniform thin line weight." --aspect-ratio 9:16 --resolution 1k -o images/test
 ```
