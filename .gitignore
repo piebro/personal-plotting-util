@@ -1,2 +1,5 @@
 *.svg
+*.png
+*.pdf
+*.pbm
 images/*
